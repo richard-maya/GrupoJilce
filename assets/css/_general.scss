@@ -1,0 +1,88 @@
+/* COLORS
+*
+-----------------------*/
+.white-text{
+    color: white;
+}
+
+.black-text {
+    color: black;
+}
+
+.jilce-blue {
+    color: $jilce-blue;
+}
+
+.jilce-brown {
+    color: $jilce-brown;
+}
+
+.jilce-pale-brown {
+    color: $jilce-pale-brown;
+}
+
+.facebook-color {
+    color: $facebook-color;
+}
+
+.twitter-color {
+    color: $twitter-color;
+}
+
+
+
+/* MIXINS
+*
+-----------------------*/
+@mixin transition($time) {
+    transition: all $time ease-out;
+}
+
+
+/* GENERAL
+*
+-----------------------*/
+body,html,section {
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    width: 99vw;
+}
+
+.hero{
+    width: 99vw;
+    min-height: 100vh;
+}
+
+nav{
+    width: 99vw;
+    @include transition(0.3s);
+    img{
+        height: 80px;
+        @include transition(0.3s);
+    }
+}
+
+.navbar-small {
+    background-color: $jilce-blue;
+    font-size: ms(0);
+    img{
+        height: 55px;
+    }
+}
+
+footer{
+    background: $jilce-blue;
+    width: 99vw;
+    p{
+        margin-bottom: 0px;
+        font-size: ms(-1);
+        color: white;
+    }
+
+    a{
+        color: #faaf41;
+    }
+}

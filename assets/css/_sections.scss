@@ -1,0 +1,69 @@
+.home-section{
+    background-image: url("../img/grupo-jilce-limpieza.jpg");
+    background-size: cover;
+    background-position: center;
+
+    h1{
+        small{
+            font-size: 50%;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: ms(5);
+        }
+    }
+
+    h1,button{
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.about-section{
+    img{
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .fa-ul{
+        .fas{
+            font-size: 50%;
+        }
+    }
+
+    .beneficios{
+        column-count: 4;
+        column-gap: 3rem;
+
+        @include media-breakpoint-down(sm) {
+            column-count: 2;
+            column-gap: 1rem;
+        }
+    }
+}
+
+.services-section {
+    background-image: url("../img/servicios-limpieza-jilce.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .brown-column{
+        height: 100vh;
+        background: $jilce-pale-brown;
+        color: white;
+    }
+}
+
+.contact-section{
+    @include media-breakpoint-up(md) {
+        background-image: url("../img/servicios-limpieza-mexico.png");
+        background-size: 40% auto;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+    .fa-ul {
+        li {
+            font-family: myriad-pro, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: ms(2);
+        }
+    }
+}

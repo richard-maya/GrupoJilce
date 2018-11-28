@@ -1,0 +1,78 @@
+/* Typography
+*
+-----------------------*/
+@import url("https://use.typekit.net/dhl5obs.css");
+
+$modularscale: (base: 1rem, ratio: $fourth);
+$fontType: p,h6,h5,h4,h3,h2,h1;
+
+@for $i from 1 through 7 {
+    #{ nth($fontType, $i) } {
+        @if $i>1 {
+            font-family: myriad-pro, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: ms($i - 1);
+            letter-spacing: 1px;
+        }
+
+        @else {
+            font-family: myriad-pro, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: ms($i);
+        }
+    }
+}
+
+nav{
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: ms(1);
+}
+
+p{
+    strong{
+        font-family: myriad-pro, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+
+.bigger-text{
+    font-size: 115%;
+}
+
+form{
+    font-family: myriad-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h2.brown-bg{
+    font-family: myriad-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: ms(5);
+    background: #DB9E52;
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 25%, #DB9E52 25.1%, #DB9E52 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#DB9E52', GradientType=1);
+}
+
+h2.blue-bg{
+    @extend h2.brown-bg;
+    background: $jilce-blue;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, #005db8 25.1%, #005db8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#005db8', GradientType=1);
+    color: white;
+}
+
+.fa-ul{
+    li{
+        font-family: myriad-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: ms(1);
+    }
+}
