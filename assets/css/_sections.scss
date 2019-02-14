@@ -1,7 +1,18 @@
+section.servicio-jilce{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section.jardineria{
+    background-image: url("../img/servicios-jardineria-toluca-metepec.jpg");
+}
+
 .home-section{
     background-image: url("../img/grupo-jilce-limpieza.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
     h1{
         small{
@@ -17,7 +28,7 @@
     }
 }
 
-.about-section{
+section.about-section{
     img{
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
@@ -28,7 +39,22 @@
         }
     }
 
-    .beneficios{
+    .beneficios {
+        column-count: 2;
+        column-gap: 3rem;
+    }
+}
+
+section.mission-statement{
+    min-height: 40vh;
+    background-image: url("../img/servicios-de-jardineria-toluca-metepec.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section.benefits{
+    .beneficios {
         column-count: 4;
         column-gap: 3rem;
 
@@ -49,6 +75,11 @@
         background: $jilce-pale-brown;
         color: white;
     }
+
+    a{
+        text-decoration: underline;
+        color: white;
+    }
 }
 
 .contact-section{
@@ -65,5 +96,43 @@
             font-style: normal;
             font-size: ms(2);
         }
+    }
+}
+
+.branding-intro{
+    background-image: url("../img/grupo-jilce-branding-bg.jpg");
+    background-size: cover;
+    background-position: center;
+
+    h1{
+        color: white;
+        font-size: ms(5);
+    }
+
+    h1,button {
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.download-item{
+    border-bottom: gray 2px solid;
+
+    h4{
+        color: $jilce-blue;
+    }
+}
+
+section{
+    .pantone-1{
+        color: $jilce-blue;
+    }
+    .pantone-2{
+        color: $jilce-pale-brown;
+    }
+    .pantone-3{
+        color: $jilce-brown;
+    }
+    .pantone-4{
+        color: #020202;
     }
 }

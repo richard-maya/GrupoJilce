@@ -3,7 +3,6 @@
 $(document).on("scroll", function () {
     "use strict";
     if ($(document).scrollTop() > 50) {
-        // console.log("Ya bajamos");
         $(".navbar").addClass("navbar-small");
     } else {
         $(".navbar").removeClass("navbar-small");

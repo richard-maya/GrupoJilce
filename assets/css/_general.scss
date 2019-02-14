@@ -42,18 +42,29 @@
 /* GENERAL
 *
 -----------------------*/
-body,html,section {
+body,html {
     margin: 0px;
     padding: 0px;
+    width: 99vw;
 }
 
 main{
     width: 99vw;
 }
 
+section{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
 .hero{
     width: 99vw;
     min-height: 100vh;
+}
+
+.w-33{
+    width: 33%;
 }
 
 nav{
