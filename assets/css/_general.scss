@@ -97,3 +97,7 @@ footer{
         color: #faaf41;
     }
 }
+
+input:disabled {
+    cursor: not-allowed;
+}

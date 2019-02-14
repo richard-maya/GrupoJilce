@@ -1,3 +1,4 @@
+<?php $form_path='assets/formoid/handler.php'; require_once $form_path; ?>
 <!DOCTYPE html>
 <html lang="mx">
 <head>
@@ -325,7 +326,7 @@
 <footer class="py-3">
     <div class="container">
         <div class="row justify-content-between">
-            <p><strong>&copy; 2019 GRUPO JILCE.</strong> Todos los derechos reservados. &nbsp;<a href="aviso-privacidad.html" title="aviso-privacidad">Aviso de Privacidad</a></p>
+            <p><strong>&copy; <?php echo date('Y'); ?> GRUPO JILCE.</strong> Todos los derechos reservados. &nbsp;<a href="aviso-privacidad.html" title="aviso-privacidad">Aviso de Privacidad</a></p>
             <p><small>Desarrollado por <a href="https://iconica.mx" target="_blank" rel="author" title="iconica-studio-mx">ICONICA STUDIO.</a> ¿Necesitas una página web profesional? <a href="https://iconica.mx" target="_blank" rel="author" title="iconica-studio-mx">Contáctanos</a></small></p>
         </div>
     </div>

@@ -51,3 +51,20 @@ $(document).ready(function () {
         $('#message-modal').modal('show');
     }
 });
+
+
+// FORM VALIDATION
+// ------------------------------->
+$(document).on('blur', '[data-validator]', function () {
+    new Validator($(this), {
+        language : {
+            required: 'Éste campo es requerido.',
+            email: 'Ingresa un correo válido.',
+            between: 'Ingresa un número válido.'
+        }
+    });
+
+    if ($('#nombre').hasClass("is-valid") && $('#correo').hasClass("is-valid") && $('#mensaje').hasClass("is-valid")) {
+        $('#submit').removeAttr("disabled", "disabled");
+    }
+});
